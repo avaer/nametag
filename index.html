@@ -171,17 +171,13 @@ directionalLight2.position.set(-0.5, 0.1, 0.5).multiplyScalar(100);
 scene.add(directionalLight2);
 
 const textMesh = new TextMesh();
-scene.add(textMesh);
-
-// set properties to configure:
 textMesh.text = 'Hello world!';
 textMesh.font = './GeosansLight.ttf';
 textMesh.fontSize = 0.5;
 textMesh.position.set(0, 1, -2);
 textMesh.color = 0x000000;
-
-// be sure to call sync() after all properties are set to update the rendering:
 textMesh.sync();
+scene.add(textMesh);
 
 function animate() {
   // orbitControls.update();
